@@ -25,12 +25,21 @@ This is a Laravel-based Project Approval Workflow System where users can submit 
 - XAMPP
 
 ---
+## 👤 Admin Login
 
-## ⚙️ Installation & Setup
+Email: admin@gmail.com  
+Password: Admin@123456
+Configure Database in .env
 
-```bash
-git clone https://github.com/styendras1-singh/project-approval-system.git
-cd project-approval-system
-composer install
-cp .env.example .env
+DB_DATABASE=your_db
+DB_USERNAME=root
+DB_PASSWORD=
+
+Run Migration & Seeder
+
+php artisan migrate --seed
+
+Run Server
+php artisan serve
 php artisan key:generate
+
